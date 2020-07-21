@@ -1,0 +1,21 @@
+<div class="md-form active-pink active-pink-2 mb-3 mt-0">
+  <div class="row">
+    <div class="col-2" [formGroup]="nameSearchForm">
+      <input class="form-control" type="text" placeholder="Search First Name" formControlName="name">
+    </div>
+    <div class="col-1">
+      <button type="button" class="btn btn-outline-secondary" (click)="submit()">Submit</button>
+    </div>
+
+    <div class="col-2" [formGroup]="interestForm">
+      <select class="form-control" type="text" placeholder="Search Interest" formControlName="interest">
+        <option value="">Please Select</option>
+        <option *ngFor="let item of interestList" value="{{item}}">{{item|titlecase
+}}</option>
+      </select>
+    </div>
+    <div class="col-1">
+      <button type="button" class="btn btn-outline-secondary" (click)="searchInterest()">Submit</button>
+    </div>
+  </div>
+</div>

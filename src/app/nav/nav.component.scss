@@ -1,0 +1,67 @@
+$navGradientTop:rgb(240, 227, 235);
+$navGradientBottom:rgb(253, 253, 253);
+
+.navBar{
+  // safari
+      background: -webkit-linear-gradient($navGradientTop, $navGradientBottom);
+  //firefox
+      background: -moz-linear-gradient($navGradientTop, $navGradientBottom);
+  //opera browser
+      background: -o-linear-gradient($navGradientTop, $navGradientBottom);
+      background: linear-gradient($navGradientTop, $navGradientBottom);
+      position: static;
+      height: 90px;
+      width: 100%;
+      min-height: 101px;
+      border-width: 0px;
+      padding: 0px;
+      display: flex;
+      justify-content: space-between;
+}
+
+#navMyName{
+  color:#310b19;
+  font:30px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  display: inline-block;
+  padding-top:30px;
+  padding-left:20px;
+  font-weight: 150;
+  min-width: 190.13px;
+}
+#navMyName:hover {
+  color: #9b697b;
+  cursor: pointer;
+}
+
+@mixin navCompMargin(){
+  margin-right:40px;
+  margin-left:40px;
+}
+.navComponents{
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+  color: #661436;
+  transition: color 0.4s ease 0s;
+  @include navCompMargin();
+}
+.navComponents:hover{
+  color:rgb(165, 151, 151);
+  cursor: pointer;
+}
+
+$navRightFont: #2E2E2E;
+#navRight{
+  margin-right: 0px;
+  padding-right: 0px;
+  right: 0px;
+  text-align: right;
+  display: inline-block;
+  padding-top:50px;
+  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
+  sans-serif;
+  color:$navRightFont;
+}
+
+
+

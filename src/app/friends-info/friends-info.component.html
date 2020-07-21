@@ -1,0 +1,30 @@
+  <div class="row" *ngIf="isFriendSelected()">
+
+    <div class="col-1">
+      <img src="{{friend.avatar}}">
+    </div>
+
+    <div class="col-6">
+      <div class="h2">
+        {{friend?.first_name}} {{friend?.last_name}}
+      </div>
+      <div>
+        Age: {{friend?.age}} years old
+      </div>
+      <div>
+        Height: {{friend?.height}} cm
+      </div>
+      <div>
+        Weight: {{friend?.weight}} kg
+      </div>
+      <div>
+        Email: {{friend?.email}}
+      </div>
+      <div>
+        Gender: {{friend?.gender}}
+      </div>
+      <div>
+        Interests: {{friend?.interest}}
+      </div>
+    </div>
+  </div>

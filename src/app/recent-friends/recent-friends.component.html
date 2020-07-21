@@ -1,0 +1,25 @@
+<div *ngIf="friendlist.length!=0">
+  <div *ngFor="let friend of friendlist">
+    <div class="row" (click)="clickDisplay(friend)">
+      <div class=col-3>
+        <img src={{friend.avatar}}>
+      </div>
+      <div class="col">
+        <div>
+          {{friend.first_name}} {{friend.last_name}}
+        </div>
+
+        <div>
+
+          {{friend.weight}} kg
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<div *ngIf="friendlist.length == 0">
+  No Result Found
+</div>
